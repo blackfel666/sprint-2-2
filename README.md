@@ -1,66 +1,125 @@
-# Sprint 2 IT Academy | Shop
+# 🛒 ShopNow - E-commerce Shopping Cart
 
-## Introduction
+A modern, fully functional shopping cart application built with vanilla JavaScript, featuring dynamic cart management, product filtering, promotional discounts, and robust form validation.
 
-A company in the e-commerce sector has asked us for a web application that allows them to offer the purchase of their products through the internet.
+---
 
-You will be in charge of setting up an initial demo version of the application for the client: management of the shopping cart and the application of the promotions on the final price. You have 1 week to finish this part of sprint (2.2).
+## ✨ Features
 
-<br>
+### Core Functionality
 
-## Requirements
+* **Dynamic Shopping Cart:** Add, remove, and **update product quantities** in real-time directly from the cart modal.
+* **Smart Promotions:** Automatic discount application based on quantity thresholds.
+* **Product Categories:** Organized product listings across **Grocery**, **Beauty**, and **Clothes**.
+* **Real-time Totals:** Live cart updates and total calculation with promotions factored in.
+* **Form Validation:** Complete checkout form validation using custom **Regex patterns** for data integrity.
 
+### Technical Highlights
 
-1. Clone this repo
-```bash
-$ git clone https://github.com/IT-Academy-BCN/starter-code-frontend-shop
-```
+* **ES6 Modules** architecture (`type="module"`).
+* Event-driven programming for decoupled interactions.
+* **Bootstrap 5** for a responsive and clean design.
+* **Vanilla JavaScript (ES6+):** No external libraries required beyond Bootstrap/Font Awesome assets.
+* Semantic HTML5 structure.
 
-2. Unlink your repo from the itacademy repository.
-(Explanation: You have to upload the code to your GitHub repository, not to the IT Academy. That's why you have to unlink your project from IT Academy GitHub with the following command)
+---
 
-```bash
-$ git remote rm origin
-```
+## 🛠️ Technologies
 
-3. Link your repo to the repository you have to create in your github account
-(Explanation: Now your project is not linked to any remote repository. In order to upload your code, you have to link your project to the new repository created on github.com using the following command)
+| Technology | Version | Purpose |
+| :--- | :--- | :--- |
+| **JavaScript** | ES6+ | Core business logic, cart management, and validation. |
+| **HTML5** | Semantic | Structure and accessibility. |
+| **CSS3** | Bootstrap 5.3.0 | Framework for responsive styling. |
+| **Font Awesome** | 6.4.0 | Iconography. |
 
-```bash
-$ git remote add origin <your repo name!>
-```
+---
 
-<br>
+## 📁 Project Structure
 
-## Submission
+SPRINT-2.2/ 
+├── css/
+│ └── styles.css 
+├── images/ 
+│ ├── favicon.ico 
+│ ├── product.svg 
+│ ├── img-1.jpg
+│ └── logo.png
+├── js/ 
+│ ├── checkout.js 
+│ ├── products.js 
+│ └── shop.js
+├── checkout.html
+├── index.html
+└── jsconfig.json
 
-1. It is necessary to upload each exercise in a separate commit. The commit name must clearly indicate its content.
+---
 
-2. Upload the link to your GitHub repository to the virtual campus, enabling your mentor to review and provide feedback.
+## 🚀 Getting Started
 
+### Prerequisites
 
+* A modern web browser (Chrome, Firefox, Safari, Edge).
+* A local web server (required for ES6 Modules and CORS policies).
 
-<br>
+### Installation
 
-## Introduction
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/blackfel666/sprint-2-2.git
+    cd sprint-2-2
+    ```
+---
 
-The statement of the exercise is available on the virtual campus.
+## 💡 Usage
 
-<br>
+### Shopping Flow
 
+1.  Browse products on `index.html`.
+2.  Click **"Add to cart"** to purchase items.
+3.  Open the shopping cart modal via the top-right button.
+4.  **Adjust quantities** directly in the modal using the **`+`** (plus) and **`-`** (minus) buttons.
+5.  Proceed to `checkout.html` and complete the form.
 
-## Instructions
+### Promotional System
 
-You have the following indications from the frontend manager:
+Discounts are automatically applied based on the quantity of these items in the cart:
 
-- You have prepared the base of the project on which you will work: https://github.com/IT-Academy-BCN/starter-code-frontend-shop
+| Product | Offer |
+| :--- | :--- |
+| **Cooking Oil** | **20% off** when buying **3 or more** units. |
+| **Instant Cupcake Mixture** | **30% off** when buying **10 or more** units. |
 
-- The base of the project on which you will work has already created all the files, and an initial version of the interface, so you can focus on programming the logic.
+---
 
-- As at the moment we don't consume data from a server using an API, we will work with hardcoded data in the application. For the moment we will implement the logic using a small group of 9 products divided in 3 sections.
+## 🎯 Key Functions
 
-- Except for the last level, showing the result of the functions by console is enough.
+### Cart Management (`shop.js`)
 
-- The logic to implement will be placed in the src/grocery.js and src/checkout.js files. You will see that the built in functions have already been created for you to implement them.
+| Function | Description |
+| :--- | :--- |
+| `buy(id)` | Adds or increments a product's quantity in the cart. |
+| `removeFromCart(id)` | Decrements product quantity; removes the product if the quantity reaches zero. |
+| `cleanCart()` | Clears the entire cart array. |
+| `calculateTotal()` | Computes the subtotal sum of all items. |
+| `applyPromotionsCart()` | Applies quantity-based discounts to eligible items. |
+| `printCart()` | Renders the cart modal UI, updating the product list and totals. |
 
-- It is forbidden to copy the code, since this way you don't learn anything. Furthermore, as you can see, the second release of sprint 5 is a mini-level test with the mentor, in which you will have to demonstrate live that you have acquired the javascript concepts. Don't worry, if you work on the releases you won't have any problems.
+### Form Validation (`checkout.js`)
+
+| Function | Description |
+| :--- | :--- |
+| `validate(event)` | Triggers full form validation on submission. |
+
+---
+
+## 🤝 Contributing
+
+This is an educational project developed for the **IT Academy Barcelona's Frontend Development course**.
+
+---
+
+## 👨‍💻 Author
+
+**blackfel666**
+* GitHub: **`@blackfel666`**
