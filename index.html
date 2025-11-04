@@ -26,9 +26,11 @@
 
 	<!-- Navigation-->
 	<header class="primary-header">
-		<nav class="navbar py-3 py-lg-0 navbar-light bg-light navbar-expand-lg" id="main-nav">
+		<nav class="navbar py-3 py-lg-0 navbar-light bg-light navbar-expand-lg shadow" id="main-nav">
 			<div class="container">
-				<a class="navbar-brand text-primary" href="index.html" aria-label="ShopNow Home">ShopNow</a>
+				<a class="navbar-brand" href="index.html" aria-label="ShopNow Home">
+					<img class="img-fluid w-25" src="./images/logo.png" alt="">
+				</a>
 
 				<aside class="shopping-cart-wrapper d-flex flex-row order-lg-last align-items-center">
 					<button class="navbar-toggler order-last btn-outline-primary " type="button" data-bs-toggle="collapse"
@@ -75,11 +77,11 @@
 
 	<main id="main-content">
 		<!-- Hero Section -->
-		<section class="hero bg-primary py-5" aria-label="Promotional banner">
-			<div class="container px-4 px-lg-5 my-5">
-				<div class="text-center text-white">
+		<section class="hero " aria-label="Promotional banner">
+			<div class="container px-4 px-lg-5 my-5 p-5 bg-primary bg-gradient rounded-4">
+				<div class="text-center text-light">
 					<h1 class="display-4 fw-bolder">IT Academy Shop</h1>
-					<p class="lead fw-normal text-white mb-0">Get up to 50% off Today Only!</p>
+					<p class="lead fw-normal text-light mb-0">Get up to 50% off Today Only!</p>
 				</div>
 			</div>
 		</section>
@@ -87,15 +89,15 @@
 		<!-- Product Sections -->
 		<article class="product-section pt-5" id="grocery">
 			<h2 class="text-center">
-				<i class="fas fa-shopping-basket pe-3" aria-hidden="true"></i>
+				<i class="fas fa-light fa-basket-shopping pe-3 " aria-hidden="true"></i>
 				<span>Grocery</span>
 			</h2>
 			<div class="container px-4 px-lg-5 mt-5">
 				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 					<!-- Product Cards -->
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Cooking Oil product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Cooking Oil product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -105,7 +107,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="1"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="1"
 										aria-label="Add Cooking Oil to cart">
 										Add to cart
 									</button>
@@ -114,8 +116,8 @@
 						</article>
 					</div>
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Pasta product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Pasta product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -125,7 +127,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="2"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="2"
 										aria-label="Add Pasta to cart">
 										Add to cart
 									</button>
@@ -134,8 +136,8 @@
 						</article>
 					</div>
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg"
 								alt="Instant cupcake mixture product image" loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -145,7 +147,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="3"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="3"
 										aria-label="Add Instant cupcake mixture to cart">
 										Add to cart
 									</button>
@@ -158,15 +160,15 @@
 		</article>
 		<article class="product-section pt-5" id="beauty">
 			<h2 class="text-center">
-				<i class="fas fa-heart pe-3" aria-hidden="true"></i>
+				<i class="fas fa-regular fa-heart pe-3" aria-hidden="true"></i>
 				<span>Beauty</span>
 			</h2>
 			<div class="container px-4 px-lg-5 mt-5">
 				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 					<!-- Product Cards -->
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="All-in-1 product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="All-in-1 product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -176,7 +178,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="4"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="4"
 										aria-label="Add All-in-1 to cart">
 										Add to cart
 									</button>
@@ -185,8 +187,8 @@
 						</article>
 					</div>
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Zero makeup kit product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Zero makeup kit product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -196,7 +198,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="5"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="5"
 										aria-label="Add Zero makeup kit to cart">
 										Add to cart
 									</button>
@@ -205,8 +207,8 @@
 						</article>
 					</div>
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Lip tints product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Lip tints product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -216,7 +218,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="6"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="6"
 										aria-label="Add Lip tints to cart">
 										Add to cart
 									</button>
@@ -236,8 +238,8 @@
 				<div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 					<!-- Product Cards -->
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Lawn dress product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Lawn dress product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -247,7 +249,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="7"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="7"
 										aria-label="Add Lawn dress to cart">
 										Add to cart
 									</button>
@@ -256,8 +258,8 @@
 						</article>
 					</div>
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Lawn-chiffon combo product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Lawn-chiffon combo product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -267,7 +269,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="8"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="8"
 										aria-label="Add Lawn-chiffon combo to cart">
 										Add to cart
 									</button>
@@ -276,8 +278,8 @@
 						</article>
 					</div>
 					<div class="col mb-5">
-						<article class="card product-card h-100">
-							<img class="card-img-top" src="./images/product.svg" alt="Toddler Frock product image"
+						<article class="card product-card h-100 shadow border-0 rounded-4">
+							<img class="card-img-top w-80 m-auto p-3" src="./images/product.svg" alt="Toddler Frock product image"
 								loading="lazy" />
 							<div class="card-body p-4">
 								<div class="text-center">
@@ -287,7 +289,7 @@
 							</div>
 							<div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
 								<div class="text-center">
-									<button type="button" class="btn btn-outline-dark add-to-cart" data-product-id="9"
+									<button type="button" class="btn btn-outline-primary add-to-cart" data-product-id="9"
 										aria-label="Add Toddler Frock to cart">
 										Add to cart
 									</button>
@@ -301,7 +303,7 @@
 	</main>
 
 	<!-- Footer-->
-	<footer class="py-3 bg-dark">
+	<footer class="py-3 bg-primary">
 		<div class="container">
 			<p class="m-0 text-center text-white">Copyright &copy; ShopNow <span id="current-year">2025</span></p>
 		</div>
