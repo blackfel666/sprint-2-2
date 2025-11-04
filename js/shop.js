@@ -85,7 +85,7 @@ const printCart = () => {
         </td>
         <td>
 		    $${finalSubtotal.toFixed(2)} 
-            ${item.subtotalWithDiscount ? '<span class="badge ms-2">OFFER</span>' : ''}
+            ${item.subtotalWithDiscount ? '<span class="badge ms-2 text-primary">Offer</span>' : ''}
         </td>
     `;
 
