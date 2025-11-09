@@ -73,6 +73,8 @@ SPRINT-2.2/
 
 ## 💡 Usage
 
+Github Pages https://blackfel666.github.io/sprint-2-2/
+
 ### Shopping Flow
 
 1.  Browse products on `index.html`.

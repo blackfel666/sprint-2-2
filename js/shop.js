@@ -3,10 +3,9 @@ import { products } from './products.js';
 const cart = [];
 
 /**
- * @param {number} id - Product ID to add
+ * @param {number} id 
  */
 
-// Exercise 1
 const buy = (id) => {
     const productToAdd = products.find(p => p.id === id)
         if (productToAdd){
@@ -21,26 +20,22 @@ const buy = (id) => {
         }
 }       
 
-// Exercise 2
 const cleanCart = () =>  {
     cart.length = 0
     applyPromotionsCart()
     printCart()
 }
 
-// Exercise 3
-const calculateTotal = () =>  {
+const calculateTotal = () => {
     const total = cart.reduce((acumulador, item)=>{
         return acumulador + (item.price * item.quantity)
     }, 0)
-    console.log(total)
     return total
 }
 
-// Exercise 4
 const applyPromotionsCart = () =>  {
     cart.forEach(item => {
-        item.subtotal = item.price * item.quantity;
+        item.subtotal = calculateTotal()
         if (item.offer && item.quantity >= item.offer.number ) {
             const discountPercentage = item.offer.percent;
             const discountFactor = ( 100 - discountPercentage) / 100;
@@ -51,16 +46,12 @@ const applyPromotionsCart = () =>  {
     })
 }
 
-// Exercise 5
 const printCart = () => {
     const cartList = document.getElementById('cart_list')
     const totalPrice= document.getElementById('total_price')
     const countProduct = document.getElementById('count_product')
-
     applyPromotionsCart()
-
     let totalWithDiscounts = 0
-
     cartList.innerHTML = '';
 
     cart.forEach (item => {
@@ -71,8 +62,6 @@ const printCart = () => {
                 : item.price * item.quantity; 
 
         totalWithDiscounts += finalSubtotal;
-
-
         const row = document.createElement('tr')
 
     row.innerHTML =`
@@ -101,17 +90,10 @@ const printCart = () => {
     
     if (countProduct){
         countProduct.textContent = totalItems
-    }
-    
+    }    
 }
 
-
-// ** Nivell II **
-
-// Exercise 7
 const addToCart =(id) =>{buy(id)}
-
-
 
 const removeFromCart = (id) => {
     const index= cart.findIndex( item => item.id === id);
@@ -133,7 +115,6 @@ const open_modal = () =>  {
 
 const setupModalListeners = () => {
     const cartModal = document.getElementById('cartModal');
-    
     if (cartModal) {
         cartModal.addEventListener('show.bs.modal', open_modal);
     }

@@ -1,5 +1,4 @@
 
-// Exercise 6
 const REGEX = {
 	text: /^[a-zA-Z]{3,}$/,
 	phone: /^\d{9}$/,
@@ -31,9 +30,6 @@ const toggleInputError = (inputElement, isValid, errorElement) => {
 	}   
     return isValid;
 }
-
-
-
 
 const validate = () => {
 	let error = 0;
