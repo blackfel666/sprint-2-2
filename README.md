@@ -34,9 +34,8 @@ A modern, fully functional shopping cart application built with vanilla JavaScri
 | **Font Awesome** | 6.4.0 | Iconography. |
 
 ---
-
 ## 📁 Project Structure
-
+```bash
 SPRINT-2.2/ 
 ├── css/
 │ └── styles.css 
@@ -52,7 +51,7 @@ SPRINT-2.2/
 ├── checkout.html
 ├── index.html
 └── jsconfig.json
-
+ ```
 ---
 
 ## 🚀 Getting Started
@@ -73,7 +72,7 @@ SPRINT-2.2/
 
 ## 💡 Usage
 
-Github Pages https://blackfel666.github.io/sprint-2-2/
+### Github Pages https://blackfel666.github.io/sprint-2-2/
 
 ### Shopping Flow
 
